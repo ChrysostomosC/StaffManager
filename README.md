@@ -7,12 +7,14 @@ An application for managing company employees, allowing admins to add employee i
 - **Add Employee:** Admins can add employees by specifying their name, image (stored as binary data), and details.
 - **View Employees:** Displays a list of all employees with their name and image size.
 - **Image Handling:** Employees' images are saved and stored as binary data in the database.
+- **Contact Page:** Includes a contact page with an embedded Google Map for location viewing.
   
 ## Tech Stack
 
 - **Backend:** .NET 8.0
 - **Database:** MongoDB
-- **Image Handling:** Employee images are stored as binary data.<hr />
+- **Image Handling:** Employee images are stored as binary data.
+- **Google Map Integration:** Contact page includes a Google Map for location display.<hr />
 ![Screenshot 2025-03-27 122905](https://github.com/user-attachments/assets/d825a6ac-4b70-486b-b8fb-a68e008bb234)
 ---
 ![Screenshot 2025-03-27 122932](https://github.com/user-attachments/assets/6c2a863d-e3ca-48a3-abb2-f48b979511f3)
