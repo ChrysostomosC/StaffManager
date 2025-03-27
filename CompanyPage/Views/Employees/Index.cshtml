@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Database.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All employees</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                Image @*Edw allagh se Image*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var employee in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => employee.Name) @*Edw allagh item se employee*@
+            </td>
+            <td>
+                    <img src="data:image/png;base64,@Convert.ToBase64String(employee.ImageData)" alt="@employee.Name" width="100" />
+                    @*Edw to link gia foto*@
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => employee.Details) @*Edw allagh item se employee*@
+            </td>
+            <td>
+                    @Html.ActionLink("Details", "Details", new { id = employee.Id.ToString() }) @*Edw allagh item se employee*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
