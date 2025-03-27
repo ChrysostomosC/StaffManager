@@ -1,6 +1,6 @@
 # Employee Management System
 
-A simple application for managing company employees, allowing admins to add employee information, including their name, picture, and details. The project uses **MongoDB** for storing employee data and is built with **.NET 8.0**.
+An application for managing company employees, allowing admins to add employee information, including their name, picture, and details. The project uses **MongoDB** for storing employee data and is built with **.NET 8.0**.
 
 ## Features
 
